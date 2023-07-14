@@ -1,0 +1,19 @@
+version: "3"
+
+networks:
+  frontend:
+    external: true
+
+services:
+  flappy-wings:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    restart: unless-stopped
+    labels:
+      - traefik.enable=true
+      - traefik.port=80
+      - traefik.http.routers.pacy.rule=Host(`flappy-wings.docker.localhost`)
+      - traefik.http.routers.pacy.entrypoints=https
+    networks:
+      - frontend

@@ -1,0 +1,9 @@
+<div class="container">
+  <app-start-game [(visible)]="!hasInteracted" (visibleChange)="onInteract()"></app-start-game>
+
+  <app-game
+    *ngIf="hasInteracted"
+    [canvasHeight]="canvasHeight"
+    [canvasWidth]="canvasWidth"
+  ></app-game>
+</div>

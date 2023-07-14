@@ -1,0 +1,10 @@
+<button
+  [title]="title"
+  type="button"
+  [disabled]="disabled"
+  (click)="onButtonClick($event)"
+  class="nes-btn"
+  [ngClass]="[type === 'normal' ? '' : type, disabled ? 'is-disabled' : '']"
+>
+  <ng-content></ng-content>
+</button>

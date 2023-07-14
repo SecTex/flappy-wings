@@ -1,0 +1,24 @@
+<div
+  class="overlay center-content"
+  *ngIf="visible"
+  [@fadeInOut]
+  (@fadeInOut.done)="toggleAnimationDone()"
+>
+  <div>
+    <div>
+      <app-text>Your score: {{ score }}</app-text>
+    </div>
+    <div>
+      <h1><app-text>Game Over</app-text></h1>
+    </div>
+    <div>
+      <app-button
+        type="is-primary"
+        [disabled]="!animationDone"
+        (click)="toogleVisibility()"
+        title="Play"
+        >Play</app-button
+      >
+    </div>
+  </div>
+</div>

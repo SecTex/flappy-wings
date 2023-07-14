@@ -1,0 +1,46 @@
+<!--begin::canvas-->
+<canvas #canvas [width]="canvasWidth" [height]="canvasHeight" (click)="playerJump()"></canvas>
+<!--end::canvas-->
+
+<!--begin::score-->
+<app-text class="score" *ngIf="!gameOver && !isSettingsVisible" [@fadeInOut]>
+  {{ score }}
+</app-text>
+<!--end::score-->
+
+<!--begin::bottom-left-group-->
+<div class="bottom left">
+  <app-text class="seed" *ngIf="!isSettingsVisible" [@fadeInOut]>
+    Seed: {{ levelSeed$ | async }}
+  </app-text>
+</div>
+<!--end::bottom-left-group-->
+
+<!--begin::bottom-right-button-group-->
+<div class="bottom right">
+  <button
+    title="Change Level Seed"
+    type="button"
+    [@fadeInOut]
+    *ngIf="!isSettingsVisible && !gameStarted"
+    class="settings-button"
+    (click)="showSettings()"
+  >
+    <i class="fas fa-gear"></i>
+  </button>
+</div>
+<!--end::bottom-right-button-group-->
+
+<!--begin::settings-overlay-->
+<app-settings [(visible)]="isSettingsVisible" (visibleChange)="onOverlayVisibilityChange($event)">
+</app-settings>
+<!--end::settings-overlay-->
+
+<!--begin::game-over-overlay-->
+<app-game-over
+  [score]="score"
+  [(visible)]="gameOver"
+  (visibleChange)="onOverlayVisibilityChange($event)"
+>
+</app-game-over>
+<!--end::game-over-overlay-->

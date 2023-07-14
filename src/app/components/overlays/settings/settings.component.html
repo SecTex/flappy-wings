@@ -1,0 +1,39 @@
+<div
+  class="overlay center-content"
+  *ngIf="visible"
+  [@fadeInOut]
+  (@fadeInOut.done)="toggleAnimationDone()"
+>
+  <div>
+    <div>
+      <h1><app-text>Settings</app-text></h1>
+    </div>
+    <div>
+      <div class="nes-field">
+        <label for="level-seed">Level Seed</label>
+        <input
+          #levelSeedElement
+          title="Level Seed"
+          type="number"
+          id="level-seed"
+          class="nes-input"
+          [value]="levelSeed$ | async"
+          (change)="onLevelSeedChange($event)"
+        />
+        <div>
+          <app-button (click)="randomizeLevelSeed()" title="Randomize">Randomize</app-button>
+          <app-button (click)="copyToClipboard()" title="Copy">Copy Seed</app-button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <app-button
+        type="is-primary"
+        [disabled]="!animationDone"
+        (click)="toogleVisibility()"
+        title="Play"
+        >Play</app-button
+      >
+    </div>
+  </div>
+</div>
