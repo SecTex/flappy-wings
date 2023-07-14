@@ -7,7 +7,7 @@
     "build:production": "ng build --configuration production",
     "ci": "yarn format:check && yarn lint && yarn test",
     "copy-assets": "gulp copy-assets",
-    "predeploy": "yarn build:production",
+    "predeploy": "yarn build:production --base-href=\"https://sectex.github.io/flappy-wings/\"",
     "deploy": "gh-pages -d ./dist/out-tsc/app",
     "format:check": "yarn sort-package-json --check && npx prettier --check --config .prettierrc \"**/*.{js,jsx,ts,tsx,html,css,scss}\"",
     "format:write": "yarn sort-package-json && npx prettier --write --config .prettierrc \"**/*.{js,jsx,ts,tsx,html,css,scss}\"",
