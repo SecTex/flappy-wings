@@ -31,8 +31,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: -apple-system, BlinkMacSystemFont, 'Press Start 2P', 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: 'Press Start 2P', sans-serif;
   text-align: center;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
@@ -46,11 +45,11 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 42px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .overlay {
