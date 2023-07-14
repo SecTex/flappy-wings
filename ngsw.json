@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1689335689795,
+  "timestamp": 1689336155899,
   "index": "https://sectex.github.io/flappy-wings/index.html",
   "assetGroups": [
     {
@@ -17,7 +17,7 @@
         "https://sectex.github.io/flappy-wings/manifest.webmanifest",
         "https://sectex.github.io/flappy-wings/polyfills.21e12b8895587215.js",
         "https://sectex.github.io/flappy-wings/runtime.e3c1f974f029b74e.js",
-        "https://sectex.github.io/flappy-wings/styles.c0171466648795e4.css"
+        "https://sectex.github.io/flappy-wings/styles.e08d0a0f8bc67125.css"
       ],
       "patterns": []
     },
@@ -29,6 +29,7 @@
         "ignoreVary": true
       },
       "urls": [
+        "https://sectex.github.io/flappy-wings/00053-583843164.f0e5129871954f49.png",
         "https://sectex.github.io/flappy-wings/assets/icons/android-chrome-144x144.png",
         "https://sectex.github.io/flappy-wings/assets/icons/android-chrome-192x192.png",
         "https://sectex.github.io/flappy-wings/assets/icons/android-chrome-256x256.png",
@@ -124,6 +125,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "https://sectex.github.io/flappy-wings/00053-583843164.f0e5129871954f49.png": "bccefe0cf483fa59eb371f84cb7a29361fe460be",
     "https://sectex.github.io/flappy-wings/assets/icons/android-chrome-144x144.png": "b9cc7afce326d7db869b463e0c0330dbeff741eb",
     "https://sectex.github.io/flappy-wings/assets/icons/android-chrome-192x192.png": "1c4edaa3f7fc1224a1fdb4e5b0ef6a033ed57590",
     "https://sectex.github.io/flappy-wings/assets/icons/android-chrome-256x256.png": "081e4ddf1a86f1a4d2e07bb99d684e6415446595",
@@ -212,14 +214,14 @@
     "https://sectex.github.io/flappy-wings/fa-v4compatibility.6209cf0172d95b0e.woff2": "8f80d0bbe995f7fe92320fdaec10cd5ccd710a51",
     "https://sectex.github.io/flappy-wings/fa-v4compatibility.92dce52f885fd838.ttf": "a9d072aca9e0fadc2a7167671ce3d6b18d9cd2cc",
     "https://sectex.github.io/flappy-wings/favicon.ico": "152024d5cf9e7a7232036edabfb8d6d143a4797c",
-    "https://sectex.github.io/flappy-wings/index.html": "2bc55153ce5d7a2de3863bb52dd6fb1afae3131f",
+    "https://sectex.github.io/flappy-wings/index.html": "48a8271d295f6f51c6a5b0d7fba1aa91d17db28e",
     "https://sectex.github.io/flappy-wings/main.f33562f87cd13bda.js": "c9500dd7ccfadeda9c188dd513b6e16346b82b6c",
     "https://sectex.github.io/flappy-wings/manifest.webmanifest": "6954aae990b74d0eb786dc7a990536b64629aa9f",
     "https://sectex.github.io/flappy-wings/polyfills.21e12b8895587215.js": "de52c641baa1728061426653c9a693557b1f395e",
     "https://sectex.github.io/flappy-wings/press-start-2p-latin-400-normal.117951d60ac7c95f.woff2": "5b3fa72b7a05d59282ae48b1fc74fb360be9f4ae",
     "https://sectex.github.io/flappy-wings/press-start-2p-latin-400-normal.463a10545c1085ab.woff": "7180c9e677d6d07352a9c93e1e42a260338b7133",
     "https://sectex.github.io/flappy-wings/runtime.e3c1f974f029b74e.js": "9dc946a0be5d6e1073f9dcede240c7762dbd50f9",
-    "https://sectex.github.io/flappy-wings/styles.c0171466648795e4.css": "2bd97b301a8a18b59592349c943894bf917abcac"
+    "https://sectex.github.io/flappy-wings/styles.e08d0a0f8bc67125.css": "b31b88179ac0197ff81e13a8ef6fa103b46bd760"
   },
   "navigationUrls": [
     {
