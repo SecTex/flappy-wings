@@ -6,7 +6,7 @@ export class Player {
     currentVelocity: Vec2D = { x: 0, y: 0 };
     velocity: Vec2D = { x: 0, y: -1 };
 
-    readonly defaultVelocity: Vec2D = { x: 0, y: -5 };
+    readonly defaultVelocity: Vec2D = { x: 0, y: -4.5 };
     readonly gravity: number = 0.4;
     readonly width: number = 30;
     readonly height: number = 30;
@@ -34,7 +34,8 @@ export class Player {
     }
 
     private calculateDifficulty(screenWidth: number, screenHeight: number): number {
-        const aspectRatio = screenWidth / screenHeight;
-        return aspectRatio % 2 <= 1 ? 1 : aspectRatio;
+        // const aspectRatio = screenWidth / screenHeight;
+        // return aspectRatio % 2 <= 1 ? 1 : aspectRatio;
+        return 1;
     }
 }

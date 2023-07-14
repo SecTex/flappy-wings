@@ -7,7 +7,7 @@ export class Obstacle {
     currentGapSize: number = 0;
     passed: boolean = false;
 
-    readonly defaultVelocity: Vec2D = { x: -7, y: 0 };
+    readonly defaultVelocity: Vec2D = { x: -6, y: 0 };
     readonly velocityIncreaseInterval: number = 2;
     readonly velocityIncreaseValue: number = 0.01;
     readonly width: number = 50;
@@ -69,7 +69,8 @@ export class Obstacle {
     }
 
     private calculateDifficulty(screenWidth: number, screenHeight: number): number {
-        const aspectRatio = screenWidth / screenHeight;
-        return aspectRatio % 2 <= 1 ? 1 : aspectRatio;
+        // const aspectRatio = screenWidth / screenHeight;
+        // return aspectRatio % 2 <= 1 ? 1 : aspectRatio;
+        return 1;
     }
 }
