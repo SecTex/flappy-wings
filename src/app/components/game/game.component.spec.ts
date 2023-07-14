@@ -3,11 +3,13 @@ import { NgxsModule } from '@ngxs/store';
 
 import { GameComponent } from './game.component';
 import { AppState } from '../../states/app.state';
+import { SettingsComponent } from '../overlays/settings/settings.component';
+import { GameOverComponent } from '../overlays/game-over/game-over.component';
 
 describe('GameComponent', () => {
   beforeEach(() =>
     TestBed.configureTestingModule({
-      declarations: [GameComponent],
+      declarations: [GameComponent, SettingsComponent, GameOverComponent],
       imports: [NgxsModule.forRoot([AppState])],
     }),
   );
