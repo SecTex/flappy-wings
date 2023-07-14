@@ -8,7 +8,7 @@ const dest = './src/assets/icons'; // Output directory path.
 const htmlBasename = 'index.txt'; // HTML file basename.
 
 const configuration = {
-  path: 'assets/icons/', // Path for overriding default icons path. `string`
+  path: 'flappy-wings/assets/icons/', // Path for overriding default icons path. `string`
   appName: 'Flappy Wings', // Your application's name. `string`
   appShortName: null, // Your application's short_name. `string`. Optional. If not set, appName will be used
   appDescription: 'Addictive bird game.', // Your application's description. `string`
@@ -22,8 +22,8 @@ const configuration = {
   appleStatusBarStyle: 'black-translucent', // Style for Apple status bar: "black-translucent", "default", "black". `string`
   display: 'standalone', // Preferred display mode: "fullscreen", "standalone", "minimal-ui" or "browser". `string`
   orientation: 'any', // Default orientation: "any", "natural", "portrait" or "landscape". `string`
-  scope: '/', // set of URLs that the browser considers within your app
-  start_url: '/', // Start URL when launching the application from a device. `string`
+  scope: '/flappy-wings/', // set of URLs that the browser considers within your app
+  start_url: '/flappy-wings/', // Start URL when launching the application from a device. `string`
   preferRelatedApplications: false, // Should the browser prompt the user to install the native companion app. `boolean`
   relatedApplications: undefined, // Information about the native companion apps. This will only be used if `preferRelatedApplications` is `true`. `Array<{ id: string, url: string, platform: string }>`
   version: '1.0', // Your application's version string. `string`
