@@ -1,11 +1,14 @@
 import { TestBed } from '@angular/core/testing';
+import { NgxsModule } from '@ngxs/store';
 
 import { SettingsComponent } from './settings.component';
+import { AppState } from '../../../states/app.state';
 
 describe('SettingsComponent', () => {
   beforeEach(() =>
     TestBed.configureTestingModule({
       declarations: [SettingsComponent],
+      imports: [NgxsModule.forRoot([AppState])],
     }),
   );
 
