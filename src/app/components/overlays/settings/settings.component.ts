@@ -3,7 +3,7 @@ import { fadeInOut } from '../../../animations/fade-in-out.animation';
 import { Select, Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { AppState } from '../../../states/app.state';
-import { SetLevelSeed } from 'src/app/actions/actions';
+import { SetLevelSeed } from '../../../actions/actions';
 
 @Component({
   selector: 'app-settings',
