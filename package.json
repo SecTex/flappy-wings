@@ -8,7 +8,7 @@
     "ci": "yarn format:check && yarn lint && yarn test",
     "copy-assets": "gulp copy-assets",
     "predeploy": "yarn build:production",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d ./dist/out-tsc/app",
     "format:check": "yarn sort-package-json --check && npx prettier --check --config .prettierrc \"**/*.{js,jsx,ts,tsx,html,css,scss}\"",
     "format:write": "yarn sort-package-json && npx prettier --write --config .prettierrc \"**/*.{js,jsx,ts,tsx,html,css,scss}\"",
     "generate-icons": "gulp generate-icons",
