@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1689342735483,
+  "timestamp": 1689441728333,
   "index": "https://sectex.github.io/flappy-wings/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://sectex.github.io/flappy-wings/favicon.ico",
         "https://sectex.github.io/flappy-wings/index.html",
-        "https://sectex.github.io/flappy-wings/main.714319a7608863d4.js",
+        "https://sectex.github.io/flappy-wings/main.4ff36f31b9498dbb.js",
         "https://sectex.github.io/flappy-wings/manifest.webmanifest",
         "https://sectex.github.io/flappy-wings/polyfills.21e12b8895587215.js",
         "https://sectex.github.io/flappy-wings/runtime.e3c1f974f029b74e.js",
@@ -97,9 +97,6 @@
         "https://sectex.github.io/flappy-wings/assets/icons/mstile-310x150.png",
         "https://sectex.github.io/flappy-wings/assets/icons/mstile-310x310.png",
         "https://sectex.github.io/flappy-wings/assets/icons/mstile-70x70.png",
-        "https://sectex.github.io/flappy-wings/assets/images/backgrounds/00018-3468056854.png",
-        "https://sectex.github.io/flappy-wings/assets/images/backgrounds/00019-3468056854.png",
-        "https://sectex.github.io/flappy-wings/assets/images/backgrounds/00022-200777125.png",
         "https://sectex.github.io/flappy-wings/assets/images/backgrounds/00023-1912416013.png",
         "https://sectex.github.io/flappy-wings/assets/images/backgrounds/00027-3715579090.png",
         "https://sectex.github.io/flappy-wings/assets/images/backgrounds/00042-242405171.png",
@@ -193,9 +190,6 @@
     "https://sectex.github.io/flappy-wings/assets/icons/mstile-310x150.png": "ca3dff217d7010cbb5a6569444760a6dc3d18899",
     "https://sectex.github.io/flappy-wings/assets/icons/mstile-310x310.png": "c7c15275b5b5d41870e66d735a9d28e2b05655b6",
     "https://sectex.github.io/flappy-wings/assets/icons/mstile-70x70.png": "a39d6a2d86f0eb50755728419c199e5aa79446f4",
-    "https://sectex.github.io/flappy-wings/assets/images/backgrounds/00018-3468056854.png": "c0dbc1188640533edaaec81999a3a806e8d18df8",
-    "https://sectex.github.io/flappy-wings/assets/images/backgrounds/00019-3468056854.png": "31da32e7643a840debccbfa2a7b903e9e79a8d82",
-    "https://sectex.github.io/flappy-wings/assets/images/backgrounds/00022-200777125.png": "e724e324c5caed65cd299bb7e66f6d58de0657b1",
     "https://sectex.github.io/flappy-wings/assets/images/backgrounds/00023-1912416013.png": "b569ac8085d60fa4ffcb82f95e427635d9f106ec",
     "https://sectex.github.io/flappy-wings/assets/images/backgrounds/00027-3715579090.png": "4bc845a896ef3c1a7a2e9f892f80bec32e760405",
     "https://sectex.github.io/flappy-wings/assets/images/backgrounds/00042-242405171.png": "14cb406b3b5aea6f35e6e2f3c99b208a7ff7f4c0",
@@ -214,8 +208,8 @@
     "https://sectex.github.io/flappy-wings/fa-v4compatibility.6209cf0172d95b0e.woff2": "8f80d0bbe995f7fe92320fdaec10cd5ccd710a51",
     "https://sectex.github.io/flappy-wings/fa-v4compatibility.92dce52f885fd838.ttf": "a9d072aca9e0fadc2a7167671ce3d6b18d9cd2cc",
     "https://sectex.github.io/flappy-wings/favicon.ico": "152024d5cf9e7a7232036edabfb8d6d143a4797c",
-    "https://sectex.github.io/flappy-wings/index.html": "22d8cd3df6bacc9742befa40fac02f48cddceb1a",
-    "https://sectex.github.io/flappy-wings/main.714319a7608863d4.js": "d72d278368b3b9f259a91632876d0c764d92404e",
+    "https://sectex.github.io/flappy-wings/index.html": "f0d983239cc58c24a19f8df8cb1426046176ee71",
+    "https://sectex.github.io/flappy-wings/main.4ff36f31b9498dbb.js": "3b8fea2159ac7133e6771a9732fe20894c3af035",
     "https://sectex.github.io/flappy-wings/manifest.webmanifest": "6954aae990b74d0eb786dc7a990536b64629aa9f",
     "https://sectex.github.io/flappy-wings/polyfills.21e12b8895587215.js": "de52c641baa1728061426653c9a693557b1f395e",
     "https://sectex.github.io/flappy-wings/press-start-2p-latin-400-normal.117951d60ac7c95f.woff2": "5b3fa72b7a05d59282ae48b1fc74fb360be9f4ae",
