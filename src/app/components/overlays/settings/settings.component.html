@@ -4,36 +4,47 @@
   [@fadeInOut]
   (@fadeInOut.done)="toggleAnimationDone()"
 >
-  <div>
-    <div>
-      <h1><app-text>Settings</app-text></h1>
+<div>
+    <h1><app-text>Settings</app-text></h1>
+
+    <div class="nes-field">
+      <label for="level-seed">Level Seed</label>
+      <input
+        #levelSeedElement
+        title="Level Seed"
+        type="number"
+        id="level-seed"
+        class="nes-input"
+        [value]="levelSeed$ | async"
+        (change)="onLevelSeedChange($event)"
+      />
     </div>
+
     <div>
-      <div class="nes-field">
-        <label for="level-seed">Level Seed</label>
-        <input
-          #levelSeedElement
-          title="Level Seed"
-          type="number"
-          id="level-seed"
-          class="nes-input"
-          [value]="levelSeed$ | async"
-          (change)="onLevelSeedChange($event)"
-        />
-        <div>
-          <app-button (click)="randomizeLevelSeed()" title="Randomize">Randomize</app-button>
-          <app-button (click)="copyToClipboard()" title="Copy">Copy</app-button>
-        </div>
-      </div>
+      <app-button (click)="randomizeLevelSeed()" title="Randomize">Randomize</app-button>
+      <app-button (click)="copyToClipboard()" title="Copy">Copy</app-button>
     </div>
-    <div>
-      <app-button
-        type="is-primary"
-        [disabled]="!animationDone"
-        (click)="toogleVisibility()"
-        title="Play"
-        >Play</app-button
+
+    <div class="nes-select">
+      <label for="level-seed">Background</label>
+      <select
+        title="background"
+        [value]="background$ | async"
+        (change)="onBackgroundChange($event)"
       >
+        <ng-container *ngFor="let background of backgroundMap">
+          <option [value]="background">{{ background }}</option>
+        </ng-container>
+      </select>
     </div>
+
+    <app-button
+      type="is-primary"
+      [disabled]="!animationDone"
+      (click)="toogleVisibility()"
+      title="Play"
+    >
+      Play
+    </app-button>
   </div>
 </div>

@@ -1,5 +1,8 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, DestroyRef } from '@angular/core';
 import { fadeInOut } from './animations/fade-in-out.animation';
+import { Store } from '@ngxs/store';
+import { Subject, takeUntil } from 'rxjs';
+import { Background, backgroundMap } from './models/background';
 
 @Component({
   selector: 'app-root',
@@ -23,8 +26,27 @@ export class AppComponent implements OnInit {
     this.updateCanvasSize();
   }
 
+  constructor(private store: Store, private destroyRef: DestroyRef) { }
+
   ngOnInit(): void {
     this.updateCanvasSize();
+
+    const destroyed = new Subject();
+
+    this.destroyRef.onDestroy(() => {
+      destroyed.next(null);
+      destroyed.complete();
+    });
+
+    this.store.select(state => state.app.background)
+      .pipe(takeUntil(destroyed))
+      .subscribe((background: Background) => {
+        if (!background)
+          return;
+        console.log('background', background);
+        const url = backgroundMap[background];
+        document.documentElement.style.backgroundImage = `url(${url})`;
+      });
   }
 
   onInteract(): void {

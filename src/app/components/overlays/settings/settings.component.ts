@@ -3,7 +3,8 @@ import { fadeInOut } from '../../../animations/fade-in-out.animation';
 import { Select, Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { AppState } from '../../../states/app.state';
-import { SetLevelSeed } from '../../../actions/actions';
+import { SetBackground, SetLevelSeed } from '../../../actions/actions';
+import { Background, backgroundMap } from '../../../models/background';
 
 @Component({
   selector: 'app-settings',
@@ -15,12 +16,15 @@ import { SetLevelSeed } from '../../../actions/actions';
 export class SettingsComponent {
   @ViewChild('levelSeedElement', { static: false })
   levelSeedElement!: ElementRef<HTMLInputElement>;
+
   @Select(AppState.getLevelSeed) levelSeed$!: Observable<number>;
+  @Select(AppState.getBackground) background$!: Observable<Background>;
 
   @Input() visible: boolean = false;
   @Output() visibleChange: EventEmitter<boolean> = new EventEmitter();
 
   animationDone: boolean = false;
+  backgroundMap = Array.from(Object.keys(backgroundMap));
 
   constructor(protected store: Store) { }
 
@@ -40,6 +44,12 @@ export class SettingsComponent {
     this.changeLevelSeed(Number((event.target as HTMLInputElement).value));
   }
 
+  onBackgroundChange(event: Event | null): void {
+    if (!event)
+      return;
+    this.changeBackground((event.target as HTMLInputElement).value as Background);
+  }
+
   copyToClipboard(): void {
     if (!this.levelSeedElement?.nativeElement) {
       return;
@@ -55,5 +65,9 @@ export class SettingsComponent {
 
   private changeLevelSeed(value: number): void {
     this.store.dispatch(new SetLevelSeed(value));
+  }
+
+  private changeBackground(value: Background): void {
+    this.store.dispatch(new SetBackground(value));
   }
 }
